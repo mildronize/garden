@@ -6,6 +6,8 @@ The name Suan comes from the Thai word "สวน," meaning "garden," symbolizin
 
 **Project Status**: Currently under development.
 
+Based on [Eleventy Base Blog](https://github.com/11ty/eleventy-base-blog)
+
 ## Note
 
 - Asset Co-location: https://github.com/11ty/eleventy/pull/3573
