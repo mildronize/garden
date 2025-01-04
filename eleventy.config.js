@@ -1,3 +1,16 @@
+
+/** @param {import("@11ty/eleventy").UserConfig} eleventyConfig */
+export default async function (eleventyConfig) {
+
+
+	// Copy the contents of the `public` folder to the output folder
+	// For example, `./public/css/` ends up in `_site/css/`
+	eleventyConfig
+		.addPassthroughCopy({
+			"./public/": "/"
+		})
+}
+
 export const config = {
 	// Control which files Eleventy will process
 	// e.g.: *.md, *.njk, *.html, *.liquid
