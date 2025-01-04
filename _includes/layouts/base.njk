@@ -1,11 +1,15 @@
 <!doctype html>
-<html lang="{{ metadata.language }}">
+<html lang="{{ metadata.language }}" id="root-app">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ title or metadata.title }}</title>
-    <meta name="description" content="{{ description or metadata.description }}">
-    <link rel="stylesheet" href="/css/index.css">
+    <meta
+    name="description" content="{{ description or metadata.description }}">
+    {# Emmedded CSS for prevent layout shifting, this should not be too large size #}
+    <style>
+      {% include "public/css/embbed.css" %}
+    </style>
   </head>
   <body>
     <main>
