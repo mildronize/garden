@@ -1,3 +1,4 @@
+import dataLinkPlugin from "./plugins/eleventy-plugin-data-link.js";
 
 /** @param {import("@11ty/eleventy").UserConfig} eleventyConfig */
 export default async function (eleventyConfig) {
@@ -8,7 +9,10 @@ export default async function (eleventyConfig) {
 	eleventyConfig
 		.addPassthroughCopy({
 			"./public/": "/"
-		})
+		});
+
+ // Add the data-link plugin
+ eleventyConfig.addPlugin(dataLinkPlugin);
 }
 
 export const config = {

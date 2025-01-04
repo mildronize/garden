@@ -6,13 +6,14 @@
     "build": "eleventy",
     "dev": "eleventy --serve"
   },
-  "devDependencies": {
-    "@types/bun": "latest"
-  },
   "peerDependencies": {
     "typescript": "^5.0.0"
   },
-  "dependencies": {
+  "devDependencies": {
+    "@types/bun": "latest",
     "@11ty/eleventy": "^3.0.0"
+  },
+  "dependencies": {
+    "jsdom": "^25.0.1"
   }
 }
