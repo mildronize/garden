@@ -4,7 +4,7 @@
   "type": "module",
   "scripts": {
     "build": "eleventy",
-    "dev": "eleventy --serve"
+    "dev": "npx tsx ./node_modules/.bin/eleventy --config=eleventy.config.ts --serve"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
@@ -14,6 +14,7 @@
     "@11ty/eleventy": "^3.0.0"
   },
   "dependencies": {
+    "eleventy-plugin-interlink": "link:eleventy-plugin-interlink",
     "@photogabble/eleventy-plugin-interlinker": "^1.1.0",
     "jsdom": "^25.0.1"
   }
