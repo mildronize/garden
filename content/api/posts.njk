@@ -1,9 +1,10 @@
 ---
 permalink: /api/posts.json
+layout: null
 ---
 
 [
-{% for post in collections.posts %}
+{% for post in collections.content %}
 {
    "title":"{{post.data.title}}",
    "url":"{{post.url}}",

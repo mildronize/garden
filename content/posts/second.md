@@ -1,3 +1,3 @@
 # Second Blog
 
-[first](/blog/first)
+[first](/posts/first)

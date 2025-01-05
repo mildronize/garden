@@ -1,6 +1,6 @@
 # First Blog 🚀
 
-[Second](/blog/second)
+[Second](/posts/second)
 
 
 [my site](https://thadaw.com)
