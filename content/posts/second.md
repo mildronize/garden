@@ -1,3 +1,5 @@
-# Second Blog
+---
+title: Second Blog
+---
+[[first]]
 
-[first](/posts/first)

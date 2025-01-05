@@ -1,6 +1,9 @@
-# First Blog 🚀
+---
+title: First Blog 🚀
+---
 
-[Second](/posts/second)
+
+[[second]]
 
 
 [my site](https://thadaw.com)

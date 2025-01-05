@@ -1,4 +1,7 @@
-# Index
+---
+title: welcome
+---
 
-- [First](/posts/first)
-- [Second](/posts/second)
+
+- [[first]]
+- [[second]]

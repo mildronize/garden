@@ -1,4 +1,5 @@
 import dataLinkPlugin from "./plugins/eleventy-plugin-data-link.js";
+import pluginInterlinker from "@photogabble/eleventy-plugin-interlinker";
 
 /** @param {import("@11ty/eleventy").UserConfig} eleventyConfig */
 export default async function (eleventyConfig) {
@@ -11,8 +12,11 @@ export default async function (eleventyConfig) {
 			"./public/": "/"
 		});
 
- // Add the data-link plugin
- eleventyConfig.addPlugin(dataLinkPlugin);
+	// Add the data-link plugin for Client Routing
+	eleventyConfig.addPlugin(dataLinkPlugin);
+
+	// For Obisidian Wikilinks
+	eleventyConfig.addPlugin(pluginInterlinker);
 }
 
 export const config = {
