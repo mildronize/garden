@@ -178,3 +178,6 @@ dist
 _site
 public/js/src
 content/.obsidian
+
+# content/demo
+.tmp
