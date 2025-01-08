@@ -1,5 +1,5 @@
 import dataLinkPlugin from "./plugins/eleventy-plugin-data-link.js";
-import pluginObsidianLink  from "@thaitype/eleventy-plugin-obsidian-link";
+import pluginInterlink  from "@thaitype/eleventy-plugin-interlink";
 
 /** @param {import("@11ty/eleventy").UserConfig} eleventyConfig */
 export default async function (eleventyConfig) {
@@ -15,7 +15,7 @@ export default async function (eleventyConfig) {
 	eleventyConfig.addPlugin(dataLinkPlugin);
 
 	// For Obisidian Wikilinks
-	eleventyConfig.addPlugin(pluginObsidianLink);
+	eleventyConfig.addPlugin(pluginInterlink);
 
 	eleventyConfig.addWatchTarget("{public,content,_includes}/**/*");
 }

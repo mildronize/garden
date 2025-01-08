@@ -13,7 +13,7 @@
   "devDependencies": {
     "@11ty/eleventy": "^3.0.0",
     "@photogabble/eleventy-plugin-interlinker": "^1.1.0",
-    "@thaitype/eleventy-plugin-obsidian-link": "^0.0.4",
+    "@thaitype/eleventy-plugin-interlink": "^0.0.5",
     "@types/bun": "latest",
     "nodemon": "^3.1.9"
   },
