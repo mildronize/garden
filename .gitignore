@@ -179,4 +179,5 @@ _site
 public/js/src
 content/.obsidian
 
-content/demo
+# content/demo
+.tmp

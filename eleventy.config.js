@@ -1,14 +1,9 @@
-
-
 import dataLinkPlugin from "./plugins/eleventy-plugin-data-link.js";
-// import pluginInterlinker from "@photogabble/eleventy-plugin-interlinker";
-// import pluginInterlinker from "./plugins/eleventy-plugin-interlink.js";
-import { calculator} from 'eleventy-plugin-interlink';
-
-console.log(calculator.add(1,2));
+import pluginObsidianLink  from "@thaitype/eleventy-plugin-obsidian-link";
 
 /** @param {import("@11ty/eleventy").UserConfig} eleventyConfig */
 export default async function (eleventyConfig) {
+	
 	// Copy the contents of the `public` folder to the output folder
 	// For example, `./public/css/` ends up in `_site/css/`
 	eleventyConfig
@@ -20,7 +15,7 @@ export default async function (eleventyConfig) {
 	eleventyConfig.addPlugin(dataLinkPlugin);
 
 	// For Obisidian Wikilinks
-	// eleventyConfig.addPlugin(pluginInterlinker);
+	eleventyConfig.addPlugin(pluginObsidianLink);
 }
 
 export const config = {

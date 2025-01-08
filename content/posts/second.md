@@ -1,5 +1,0 @@
----
-title: Second Blog
----
-[[first]]
-
