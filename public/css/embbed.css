@@ -69,6 +69,7 @@ a:visited {
 Layout
 */
 
+
 .container {
   display: flex;
   flex-wrap: nowrap;
@@ -77,8 +78,17 @@ Layout
   overflow: hidden;
 }
 
+/* Sidebar + Content */
+
+.main-container {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+}
+
 .sidebar {
-  flex: 0 0 250px;
+  flex: 0 0 300px;
   background-color: #1e1e1e;
   padding: 20px;
   display: flex;
@@ -114,6 +124,8 @@ Layout
   cursor: pointer;
 }
 
+/* Content */
+
 .content {
   flex: 1;
   padding: 20px;
@@ -135,6 +147,8 @@ Layout
 .content ol {
   padding-left: 20px;
 }
+
+/* Right Panel */
 
 .right-panel {
   flex: 0 0 300px;
@@ -173,28 +187,16 @@ Layout
 
 /* Move right-panel below content for screens < 1200px */
 @media (max-width: 1200px) {
-  /* .container {
+
+  .main-container {
     flex-direction: column;
-  } */
+  }
 
-  /* .content {
-    flex: none;
-    height: auto;
-  } */
-
-  /* .right-panel {
-    flex: none;
-    height: auto;
-  } */
 }
 
 /* Hide sidebar for screens < 800px */
 @media (max-width: 800px) {
-  /* .sidebar {
+   .sidebar {
     display: none;
   }
-
-  .container {
-    height: auto;
-  } */
 }

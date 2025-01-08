@@ -8,40 +8,41 @@
     name="description" content="{{ description or metadata.description }}">
     {# Emmedded CSS for prevent layout shifting, this should not be too large size #}
     <style>
-      {% include "public/css/embbed.css" %}
-    </style>
+      {% include "public/css/embbed.css" %}</style>
   </head>
-<body>
-  <div class="container">
-    <aside class="sidebar">
-      <div class="logo">🌳 Suan</div>
-      <input type="text" class="search-bar" placeholder="Search">
-      <nav class="explorer">
-        <h3>Explorer</h3>
-        <ul>
-          <li>Advanced</li>
-          <li>Feature List</li>
-          <li>Plugins</li>
-          <li>Authoring Content</li>
-          <li>Building your Quartz</li>
-          <li>Configuration</li>
-        </ul>
-      </nav>
-    </aside>
-    <main class="content">
-       {{ content | safe }}
-    </main>
-    <aside class="right-panel">
-      <div class="table-of-contents">
-        <h3>Table of Contents</h3>
-        <ul>
-          <li>Get Started</li>
-          <li>Features</li>
-          <li>Troubleshooting + Updating</li>
-        </ul>
+  <body>
+    <div class="container">
+      <aside class="sidebar">
+        <div class="logo">🌳 Suan</div>
+        <input type="text" class="search-bar" placeholder="Search">
+        <nav class="explorer">
+          <h3>Explorer</h3>
+          <ul>
+            <li>Advanced</li>
+            <li>Feature List</li>
+            <li>Plugins</li>
+            <li>Authoring Content</li>
+            <li>Building your Quartz</li>
+            <li>Configuration</li>
+          </ul>
+        </nav>
+      </aside>
+      <div class="main-container">
+        <main class="content">
+          {{ content | safe }}
+        </main>
+        <aside class="right-panel">
+          <div class="table-of-contents">
+            <h3>Table of Contents</h3>
+            <ul>
+              <li>Get Started</li>
+              <li>Features</li>
+              <li>Troubleshooting + Updating</li>
+            </ul>
+          </div>
+        </aside>
       </div>
-    </aside>
-  </div>
-</body>
+    </div>
+  </body>
   <script type="module" crossorigin src="/js/main.js"></script>
 </html>
