@@ -2,6 +2,4 @@
 title: welcome
 ---
 
-
-- [[first]]
-- [[second]]
+Hello the home digital garden

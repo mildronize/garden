@@ -3,6 +3,7 @@
   "module": "index.ts",
   "type": "module",
   "scripts": {
+    "build:watch-plugin": "nodemon --exec 'bun run dev' --watch ../eleventy-plugin-obsidian-link/dist --ext js",
     "build": "eleventy",
     "dev": "eleventy --serve"
   },
@@ -10,11 +11,13 @@
     "typescript": "^5.0.0"
   },
   "devDependencies": {
+    "@11ty/eleventy": "^3.0.0",
+    "@photogabble/eleventy-plugin-interlinker": "^1.1.0",
+    "@thaitype/eleventy-plugin-obsidian-link": "^0.0.4",
     "@types/bun": "latest",
-    "@11ty/eleventy": "^3.0.0"
+    "nodemon": "^3.1.9"
   },
   "dependencies": {
-    "@photogabble/eleventy-plugin-interlinker": "^1.1.0",
     "jsdom": "^25.0.1"
   }
 }
