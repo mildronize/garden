@@ -89,7 +89,7 @@ Layout
 
 .sidebar {
   flex: 0 0 300px;
-  background-color: #1e1e1e;
+  /* background-color: #1e1e1e; */
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -133,26 +133,19 @@ Layout
   height: 100%;
 }
 
-.content h1 {
-  font-size: 2em;
-}
-
-.content pre {
-  background-color: #2b2b2b;
-  padding: 10px;
-  border-radius: 5px;
-  overflow-x: auto;
-}
-
-.content ol {
-  padding-left: 20px;
+footer {
+  margin-top: 20px;
+  padding-top: 20px;
+  display: flex;
+  border-top: 1px solid #393639;
+  font-size: 0.8em;
 }
 
 /* Right Panel */
 
 .right-panel {
   flex: 0 0 300px;
-  background-color: #1e1e1e;
+  /* background-color: #1e1e1e; */
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -182,6 +175,8 @@ Layout
   margin: 5px 0;
   cursor: pointer;
 }
+
+
 
 /* Responsive Layout */
 
