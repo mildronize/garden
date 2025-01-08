@@ -16,6 +16,8 @@ export default async function (eleventyConfig) {
 
 	// For Obisidian Wikilinks
 	eleventyConfig.addPlugin(pluginObsidianLink);
+
+	eleventyConfig.addWatchTarget("{public,content,_includes}/**/*");
 }
 
 export const config = {
