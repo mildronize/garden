@@ -8,6 +8,17 @@ The name Suan comes from the Thai word "สวน," meaning "garden," symbolizin
 
 Based on [Eleventy Base Blog](https://github.com/11ty/eleventy-base-blog)
 
+## Install
+
+```
+git clone https://github.com/thaitype/suan.git
+cd suan
+git remote rename origin upstream
+git remote add origin <your-repo-url>
+git push -u origin main
+```
+
+
 ## Note
 
 - Asset Co-location: https://github.com/11ty/eleventy/pull/3573
