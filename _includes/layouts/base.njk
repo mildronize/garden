@@ -28,28 +28,7 @@
         </nav>
       </aside>
       <div class="main-container">
-        <div class="center-panel">
-          <main class="content">
-            {{ content | safe }}
-          </main>
-          <hr>
-          <div class="center-footer">
-            {% include "_includes/layouts/footer.njk" %}
-          </div>
-        </div>
-        <aside class="right-panel">
-          <div class="table-of-contents">
-            <h3>Table of Contents</h3>
-            <ul>
-              <li>Get Started</li>
-              <li>Features</li>
-              <li>Troubleshooting + Updating</li>
-            </ul>
-          </div>
-          <div class="right-footer">
-            {% include "_includes/layouts/footer.njk" %}
-          </div>
-        </aside>
+        {{ content | safe }}
       </div>
     </div>
   </body>
