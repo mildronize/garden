@@ -1,14 +1,4 @@
 ---
 permalink: /api/posts.json
-layout: null
+layout: layouts/api.njk
 ---
-
-[
-{% for post in collections.content %}
-{
-   "title":"{{post.data.title}}",
-   "url":"{{post.url}}",
-   "content":"{{ post.content | striptags}}"
-} {% if loop.last == false %},{% endif %}
-{% endfor %} 
-]
