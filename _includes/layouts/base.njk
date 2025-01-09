@@ -6,11 +6,19 @@
     <title>{{ title or metadata.title }}</title>
     <meta
     name="description" content="{{ description or metadata.description }}">
-    {# Emmedded CSS for prevent layout shifting, this should not be too large size #}
-    <style>
-      {% include "public/css/embbed.css" %}</style>
+
+    {%- css %}{% include "public/css/embbed.css" %}{% endcss %}
+
+    {#- Render the CSS bundle using inlined CSS (for the fastest site performance in production) #}
+		<style>{% getBundle "css" %}</style>
+		{#- Renders the CSS bundle using a separate file, if you can't set CSP directive style-src: 'unsafe-inline' #}
+		{#- <link rel="stylesheet" href="{% getBundleFileUrl "css" %}"> #}
+
+    {#- Add the heading-anchors web component to the JavaScript bundle #}
+    {%- js %}{% include "node_modules/@zachleat/heading-anchors/heading-anchors.js" %}{% endjs %}
   </head>
   <body>
+    <a href="#skip" class="visually-hidden">Skip to main content</a>
     <div class="container">
       <aside class="sidebar">
         <div class="logo">🌳 Suan</div>
@@ -28,9 +36,11 @@
         </nav>
       </aside>
       <div class="main-container">
-        {{ content | safe }}
+            {{ content | safe }}
+        </main>
       </div>
     </div>
   </body>
+  <script type="module" src="{% getBundleFileUrl "js" %}"></script>
   <script type="module" crossorigin src="/js/main.js"></script>
 </html>
