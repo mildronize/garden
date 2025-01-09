@@ -2,7 +2,20 @@
 layout: layouts/base.njk
 ---
 
-<h1>{{ title }}</h1>
-
-{{ content | safe }}
-
+<main class="content">
+  <h1>{{ title }}</h1>
+  {{ content | safe }}
+</main>
+<aside class="right-panel">
+  <div class="table-of-contents">
+    <h3>Table of Contents</h3>
+    <ul>
+      <li>Get Started</li>
+      <li>Features</li>
+      <li>Troubleshooting + Updating</li>
+    </ul>
+  </div>
+  <div class="right-footer">
+    {% include "_includes/layouts/footer.njk" %}
+  </div>
+</aside>
