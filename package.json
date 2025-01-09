@@ -12,12 +12,15 @@
   },
   "devDependencies": {
     "@11ty/eleventy": "^3.0.0",
+    "@11ty/eleventy-navigation": "^0.3.5",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
     "@photogabble/eleventy-plugin-interlinker": "^1.1.0",
     "@thaitype/eleventy-plugin-interlink": "^0.0.5",
     "@types/bun": "latest",
     "nodemon": "^3.1.9"
   },
   "dependencies": {
+    "@zachleat/heading-anchors": "^1.0.1",
     "jsdom": "^25.0.1"
   }
 }

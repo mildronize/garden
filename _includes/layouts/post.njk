@@ -2,22 +2,29 @@
 layout: layouts/base.njk
 ---
 
+{# Only include the syntax highlighter CSS on blog posts, included with the CSS per-page bundle #}
+{%- css %}{% include "node_modules/prismjs/themes/prism-okaidia.css" %}{% endcss %}
+{%- css %}{% include "public/css/prism-diff.css" %}{%- endcss %}
 <main class="content">
   <h1>{{ title }}</h1>
-  {{ content | safe }}
+  <main id="skip">
+    <heading-anchors>
+      {{ content | safe }}
+    </heading-anchors>
+  </main>
   <hr>
-  {% include "_includes/layouts/footer.njk" %}
-</main>
-<aside class="right-panel">
-  <div class="table-of-contents">
-    <h3>Table of Contents</h3>
-    <ul>
-      <li>Get Started</li>
-      <li>Features</li>
-      <li>Troubleshooting + Updating</li>
-    </ul>
-  </div>
-  <div class="right-footer">
     {% include "_includes/layouts/footer.njk" %}
-  </div>
-</aside>
+  </main>
+  <aside class="right-panel">
+    <div class="table-of-contents">
+      <h3>Table of Contents</h3>
+      <ul>
+        <li>Get Started</li>
+        <li>Features</li>
+        <li>Troubleshooting + Updating</li>
+      </ul>
+    </div>
+    <div class="right-footer">
+      {% include "_includes/layouts/footer.njk" %}
+    </div>
+  </aside>
