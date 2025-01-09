@@ -1,0 +1,9 @@
+[
+{% for post in collections.posts %}
+{
+   "title":"{{post.data.title}}",
+   "url":"{{post.url}}",
+   "content":"{{ post.content | striptags}}"
+} {% if loop.last == false %},{% endif %}
+{% endfor %} 
+]
