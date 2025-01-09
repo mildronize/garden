@@ -1,5 +1,6 @@
 ---
-title: welcome
+title: Welcome to my garden
 ---
+Welcome to my garden 
 
-Hello the home digital garden
+[[Developer's Brain]]
