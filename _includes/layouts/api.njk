@@ -1,10 +1,5 @@
----
-permalink: /api/posts.json
-layout: null
----
-
 [
-{% for post in collections.content %}
+{% for post in collections.posts %}
 {
    "title":"{{post.data.title}}",
    "url":"{{post.url}}",
