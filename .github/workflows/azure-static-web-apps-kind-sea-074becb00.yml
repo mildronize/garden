@@ -101,6 +101,11 @@ jobs:
       - name: Build
         run: bun run build
 
+      # - name: Login Azure
+      #   uses: azure/login@v1
+      #   with:
+      #     creds: ${{ secrets.AZURE_CREDENTIALS }}
+
       - name: Deploy to Azure Static Web Apps
         uses: nick-fields/retry@v2.8.3
         with:
