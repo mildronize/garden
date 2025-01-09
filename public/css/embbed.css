@@ -35,6 +35,9 @@
 	}
 }
 
+@view-transition {
+	navigation: auto;
+}
 
 /* Global stylesheet */
 * {
@@ -126,19 +129,37 @@ Layout
 
 /* Content */
 
-.content {
+.center-panel {
   flex: 1;
   padding: 20px;
   overflow-y: auto;
   height: 100%;
 }
 
+.content {
+  /* flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  height: 100%; */
+}
+
+hr {
+  margin: 20px 0;
+  /* plain hr */
+  border: none;
+  height: 1px;
+  background-color: #393639;
+}
+
 footer {
   margin-top: 20px;
   padding-top: 20px;
   display: flex;
-  border-top: 1px solid #393639;
   font-size: 0.8em;
+}
+
+.right-footer {
+  display: none;
 }
 
 /* Right Panel */
@@ -176,17 +197,25 @@ footer {
   cursor: pointer;
 }
 
-
-
 /* Responsive Layout */
 
 /* Move right-panel below content for screens < 1200px */
 @media (max-width: 1200px) {
-
   .main-container {
     flex-direction: column;
   }
 
+  .right-footer {
+    display: block;
+  }
+
+  .center-footer {
+    display: none;
+  }
+  
+  /* .center-panel {
+    height: auto;
+  } */
 }
 
 /* Hide sidebar for screens < 800px */
