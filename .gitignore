@@ -181,3 +181,15 @@ content/.obsidian
 
 # content/demo
 .tmp
+
+
+# Obsidians
+.obsidian/*   
+# Exception   
+!.obsidian/core-plugins.json
+!.obsidian/community-plugins.json
+
+# Exclude Untitled Notes
+Untitled*
+# Exclude "bad" names
+null*
