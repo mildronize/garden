@@ -34,5 +34,10 @@ Azure Kubernetes Service [https://www.the-aks-checklist.com/](https://www.the-ak
 - [[ Mozilla Sops]]
 - [[Microservice]]
 
+## JavaScrip, TypeScript
+
+[[NPM Stuff]]
+
 ## Web Assets
  - [[Icons]]
+
