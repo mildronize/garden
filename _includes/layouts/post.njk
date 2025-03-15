@@ -6,11 +6,13 @@ layout: layouts/base.njk
 {%- css %}{% include "node_modules/prismjs/themes/prism-okaidia.css" %}{% endcss %}
 {%- css %}{% include "public/css/prism-diff.css" %}{%- endcss %}
 <div id="wrapper">
-  <main class="post">
+  <main id="skip" class="post">
     <h1>{{ title }}</h1>
-    <section id="brief" class="prose">
-      {{ content | safe }}
-    </section>
+    <heading-anchors>
+      <section id="brief" class="prose">
+        {{ content | safe }}
+      </section>
+    </heading-anchors>
     <hr>
       {% include "_includes/layouts/footer.njk" %}
     </main>
