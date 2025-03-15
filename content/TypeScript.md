@@ -1,4 +1,11 @@
 
+# TypeScript Type Utility
+https://github.com/sindresorhus/type-fest
+
+
+# Type Challenge
+https://github.com/type-challenges/type-challenges
+
 nameof
 
 ```tsx
@@ -16,4 +23,5 @@ function nameof<T>(key: keyof T): keyof T {
 
 console.log(nameof<User>("name"));
 console.log(nameof<User>("id"));
-```
+
+
