@@ -61,3 +61,22 @@ then i've checked it don't has file in history
 ```
 git log -- content/private
 ```
+
+
+## How to Update Git across repo
+
+Example for using [suan](https://github.com/thaitype/suan) 
+
+If my current branch is `main`
+  
+```
+git remote add upstream https://github.com/thaitype/suan.git
+git config pull.rebase true
+git pull upstream main
+```
+
+
+## Explain the concept, how to update.
+
+leverage pull rebase mechanism, to update without affect the current code, ef
+then, pull using `git pull upstream main` (main from upstream origin that means thaitype/suan)
