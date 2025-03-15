@@ -1,3 +1,7 @@
+up:: [[Index]]
+tags:: 
+
+
 ## **Project Guideline**
 
 [https://github.com/mildronize/SecurityChecklist](https://github.com/mildronize/SecurityChecklist)
@@ -42,4 +46,4 @@ Azure Kubernetes Service [https://www.the-aks-checklist.com/](https://www.the-ak
  - [[Icons]]
 
 # Dev tools
-- [[Git]]
+- [[Git 3]]
