@@ -182,6 +182,15 @@ content/.obsidian
 # content/demo
 .tmp
 
+# Obsidians
+.obsidian/*
+# Exception   
+!.obsidian/plugins
+!.obsidian/app.json
+!.obsidian/appearance.json
+!.obsidian/core-plugins.json
+!.obsidian/community-plugins.json
+# Plugin Files
 
 # Exclude Untitled Notes
 Untitled*
