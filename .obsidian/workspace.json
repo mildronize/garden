@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "accd94571e741833",
+        "id": "6003dc862337d8a6",
         "type": "tabs",
         "children": [
           {
-            "id": "e878156a98eaa29d",
+            "id": "e45ccc17d3fc66e4",
             "type": "leaf",
             "state": {
-              "type": "split-diff-view",
+              "type": "markdown",
               "state": {
-                "aFile": "content/Test.md",
-                "bFile": "content/Test.md",
-                "aRef": ""
+                "file": "content/developer/Git.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "diff",
-              "title": "Diff: Test"
+              "icon": "lucide-file",
+              "title": "Git"
             }
           }
         ]
@@ -74,7 +74,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -176,18 +177,33 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "e878156a98eaa29d",
+  "active": "e45ccc17d3fc66e4",
   "lastOpenFiles": [
-    "content/Microservice.md",
-    "content/Sub Page.md",
-    "content/Test.md",
-    "content/Terraform.md",
-    "README.md",
-    "content/TypeScript.md",
-    "content/Azure Monitor.md",
+    "().md",
+    "content/developer/Git.md",
+    "content/Git.md",
     "content/Book Focus 2024.md",
+    "content/TypeScript.md",
+    "content/Test.md",
+    "content/Sub Page.md",
     "content/Home.md",
-    "content/DevOps.md",
-    "content/Git.md"
+    "content/Azure.md",
+    "content/Azure Monitor.md",
+    "Test.md",
+    "content/NPM Stuff.md",
+    "package-lock.json",
+    "yarn.lock",
+    "bun.lockb",
+    "_site/developer/Git/index.html",
+    "_site/developer/Git",
+    "_site/TypeScript/index.html",
+    "_site/TypeScript",
+    "_site/Test/index.html",
+    "_site/Test",
+    "_site/Sub Page/index.html",
+    "content/Terraform.md",
+    "content/Microservice.md",
+    "README.md",
+    "content/DevOps.md"
   ]
 }

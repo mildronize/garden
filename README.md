@@ -6,5 +6,6 @@ Powered by [suan](https://github.com/thaitype/suan)
 
 ```
 git remote add upstream https://github.com/thaitype/suan.git
-git pull upstream upstream
+git config pull.rebase true
+git pull upstream main
 ```
