@@ -47,3 +47,8 @@ Azure Kubernetes Service [https://www.the-aks-checklist.com/](https://www.the-ak
 
 # Dev tools
 - [[Git 3]]
+
+--
+
+##
+[[node awesome]]
