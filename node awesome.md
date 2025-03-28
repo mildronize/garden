@@ -1,15 +1,20 @@
 
-## มิตรแท้ CLI 
+## มิตรแท้ CLI & Framework
 
-- [https://www.npmjs.com/package/cross-spawn?activeTab=readme](https://www.npmjs.com/package/cross-spawn?activeTab=readme)
 - [https://github.com/tinylibs/tinyexec](https://github.com/tinylibs/tinyexec)
+- https://www.npmjs.com/package/cac
+	- **C**ommand **A**nd **C**onquer is a JavaScript library for building CLI apps.
+- https://github.com/webdiscus/ansis: Color in Terminal or console support any runtime 
+- unconfig
+- https://github.com/SuperchupuDev/tinyglobby - A fast and minimal alternative to globby and fast-glob
+- https://github.com/unjs/pathe 🛣️ Drop-in replacement of the Node.js's path module module that ensures paths are normalized
+- https://www.npmjs.com/package/open -- Open stuff like URLs, files, executables. Cross-platform.
+- https://github.com/antfu/structured-clone-es: structured-clone 
+### Prepare to move out
 - yargs
 	- for subcommand, better than commander that need separate files
+- - [https://www.npmjs.com/package/cross-spawn?activeTab=readme](https://www.npmjs.com/package/cross-spawn?activeTab=readme)
 
-
-
-### มิตรแท้ Framework
-- unconfig
 
 ศึกษาดูงานต่างๆ 
 https://github.dev/antfu-collective/bumpp
@@ -31,3 +36,5 @@ https://github.com/antfu/everything
 - rolldown
 - tsup
 - tsdown
+- rollup
+- vite
